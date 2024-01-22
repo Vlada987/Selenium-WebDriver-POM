@@ -3,7 +3,6 @@ package pages;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,13 +13,9 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);    
     }
+    
     By homePageTitle = By.xpath("//span[@class='title']");
     By filterButton = By.xpath("//select[@class='product_sort_container']");
-
-
-
-
-
 
     public HomePage checkHomePageTitle(String txt){
         String homePageTitleTxtAct = readText(homePageTitle);
@@ -61,7 +56,7 @@ public class HomePage extends BasePage {
         else{
             return false;
         }   
-        }
+     }
     
 
     public HomePage filterCheck(Boolean bEx){
@@ -69,8 +64,5 @@ public class HomePage extends BasePage {
         compareBoolean(bEx, bAc);
         return this;
     }
-    
-
-
-    
+        
 }
