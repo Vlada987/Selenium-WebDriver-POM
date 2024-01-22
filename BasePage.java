@@ -48,8 +48,4 @@ public void compareBoolean(Boolean b1, Boolean b2){
     Assert.assertEquals(b1, b2);
 }
 
-
-
-
-
 }
