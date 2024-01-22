@@ -3,7 +3,6 @@ package pages;
 import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,13 +16,13 @@ public class LoginPage extends BasePage {
         super(driver);      
     }
 
-    String baseURI = "https://www.saucedemo.com/";
+    String baseURL = "https://www.saucedemo.com/";
     By userName = By.id("user-name");
     By passWord = By.id("password");
     By loginButton = By.id("login-button");
 
     public LoginPage openPage(){
-        driver.get(baseURI);
+        driver.get(baseURL);
         return this;
     }
     public LoginPage login(String userNameTxt, String pasSwordTxt){
@@ -38,12 +37,5 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-   
-    
-
-
-
-      }
-    
-
+ }
     
