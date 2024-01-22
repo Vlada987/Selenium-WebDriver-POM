@@ -1,6 +1,6 @@
 package tests;
-import org.junit.Test;
 
+import org.junit.Test;
 import pages.HomePage;
 import pages.LoginPage;
 
@@ -20,12 +20,5 @@ public void tc1(){
     homp.filterButtonPresence(true);
     homp.filterFromMostExpencive();
     homp.filterCheck(true);
-
-
-
-}
-
-
-
-    
+ }
 }
